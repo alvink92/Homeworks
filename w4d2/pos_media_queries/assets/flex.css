@@ -132,9 +132,6 @@ label {
     display: block;
   }
 
-  .hamburger-dropdown ul {
-
-  }
 
   .hamburger-dropdown:hover ul {
       display: block;
