@@ -5,19 +5,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
   const ctx = c.getContext('2d');
 
+// draw square
   ctx.fillStyle = 'red';
   ctx.fillRect(0, 0, 100, 100);
 
+
+// draw circle
   ctx.beginPath();
   ctx.arc(50,50,50,0,8, false);
   ctx.strokeStyle = "green";
-  ctx.lineWidth = 3;
+  ctx.lineWidth = 1;
   ctx.stroke();
+
+  // draw pac man
+    ctx.beginPath();
+    ctx.arc(150,150,50,.75,5.5, false);
+    ctx.strokeStyle = "yellow";
+    ctx.lineWidth = 1;
+    ctx.fillStyle = "yellow";
+    ctx.stroke();
+    ctx.fill();
 });
-ctx.beginPath();
-ctx.arc(100, 100, 20, 0, 2*Math.PI, true);
-ctx.strokeStyle = "green";
-ctx.lineWidth = 5;
-ctx.stroke();
-ctx.fillStyle = "blue";
-ctx.fill();
